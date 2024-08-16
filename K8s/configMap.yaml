@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  MONGO_URI: mongodb://admin:password@mongo-svc:27017/mydatabase?authSource=admin'
+  NODE_ENV: production
